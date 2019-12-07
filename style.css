@@ -120,7 +120,7 @@ h2:after {
     display: block;
     margin-left: -50px;
     margin-top: 20px;
-    margin-bottom: -50px;
+    margin-bottom: 0;
 }
 
 p {
@@ -176,7 +176,7 @@ footer a {
 }
 
 .galerie {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .popisek-copy {
@@ -401,12 +401,24 @@ footer a {
         padding-left: 50px;
     }
 
+    h2:after {
+        content: "";
+        width: 90px;
+        height: 5px;
+        background-color: rgb(79, 79, 211);
+        display: block;
+        margin-left: -50px;
+        margin-top: 20px;
+        margin-bottom: -50px;
+    }
+
     /* FOTOGALERIE */
 
     .galerie {
         display: flex;   
         flex-wrap: wrap; 
-        padding: 0;  
+        padding: 0; 
+        margin-top: 50px; 
     }
 
     .foto {
